@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Decodificador de Texto</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="Icon" href="/assets/minus-small.png">
+</head>
+
+<body>
+<header class="logo__alura">
+<img src="/assets/icon_alura.png" alt="logo da alura">
+</header>
+
+<main class="conteudo">
+<section class="conteudo__do__lado__esquerdo">
+<textarea class="conteudo__do__lado__esquerdo__texto__de__entrada" placeholder="Digite seu texto..." autofocus></textarea>
+<div class="conteudo__do__lado__esquerdo__icone__de__exclamacao">
+<img class="exclamacao" src="/assets/circulo-com-exclamacao.png" alt="ponto de exclamação imagem">
+<h4>Apenas letras minúsculas e sem acento.</h4>
+</div>
+<div class="conteudo__do__lado__esquerdo__botoes">
+<button class="botoes__esquerdos__criptografar" onclick="Criptografia()">Criptografar</button>
+<button class="botoes__esquerdos__descriptografar" onclick="Descriptografia()">Descriptografar</button>
+</div>
+</section>
+<section class="conteudo__do__lado__direito">
+<textarea class="conteudo__do__lado__direito__texto__de__saida" cols="30" rows="30" contenteditable="true" readonly></textarea>
+<div class="mensagem">
+<img class="conteudo__do__lado__direito__imagem" src="/assets/garoto-com-lupa.png" alt="imagem do garoto com uma lupa">
+<h1 class="mensagem__de__erro"></h1>
+</div>
+<div class="conteudo__do__lado__direito__texto">
+    <p class="conteudo__direito__texto">Digite um texto que você deseja criptografar ou descriptografar.</p>
+ </div>
+    
+<div class="conteudo__do__lado__direito__botoes">
+<button class="botaoCopiar" onclick="copiarTexto()">Copiar</button>
+<button class="botaoLimpar" onclick="limparTextoDeSaida()">Limpar</button>
+</div>
+<div class="mesagemDeSucesso" style="display: none;">Texto copiado com sucesso!</div>
+</section>
+</main>
+<footer class="rodape">
+<h3>Desenvolvido por Daiana Carvalho.</h3>
+<div class="links__redes__sociais">
+    <a class="links" href="https://github.com/DaianaCarvalho" target="_blank">Github</a>
+    <a class="links" href="https://www.instagram.com/venice_bitch999/" target="_blank">Instagram</a>
+    <a class="links" href="https://www.linkedin.com/in/daiana-carvalho-537881206/" target="_blank">Linkedin</a>
+</div>
+</footer>
+<script src="script.js"></script>
+</html>
